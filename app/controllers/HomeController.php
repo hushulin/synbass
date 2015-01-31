@@ -13,7 +13,7 @@ class HomeController extends BaseController
 	public function index()
 	{
 		$user = new User();
-		$list = $user->take(10)->get();
-		return View::make('Index.index', ['list' => $list]);
+		$list = $user->find(1);
+		return View::make('Index.index');
 	}
 }
