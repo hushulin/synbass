@@ -1,0 +1,20 @@
+{
+  "require": {
+  	"codingbean/macaw": "dev-master",
+  	"illuminate/database": "*",
+  	"philo/laravel-blade": "2.*",
+    "illuminate/view": "4.*",
+    "rdlowrey/auryn": "~0.14",
+    "maximebf/debugbar": "~1.10"
+  },
+  "autoload": {
+  		"classmap": [
+	      "app/controllers",
+	      "app/models",
+        "app/libs"
+	    ],
+		"files":[
+        "app/libs/function/functions.php"
+		]
+	}
+}

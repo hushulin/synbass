@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+
+<title><?php $__env->startSection('title'); ?>
+    网站标题
+<?php echo $__env->yieldSection(); ?></title>
+
+<meta name="keywords" content="<?php $__env->startSection('keywords'); ?>
+    网站关键字
+<?php echo $__env->yieldSection(); ?>"/>
+
+<meta name="description" content="<?php $__env->startSection('description'); ?>
+    网站描述
+<?php echo $__env->yieldSection(); ?>"/>
+
+<meta name="viewport" content="width=device-width"/>
+<link rel="stylesheet" href="<?php echo cdn('/assets/css/nec/reset.css'); ?>"/>
+<link rel="stylesheet" href="<?php echo cdn('/assets/css/nec/function.css'); ?>"/>
+<link rel="stylesheet" href="<?php echo cdn('/assets/css/nec/global.css'); ?>"/>
+<?php echo $__env->yieldContent('styles'); ?>
+
+<link rel="shortcut icon" href="<?php echo cdn('/favicon.ico'); ?>"/>
+<link rel="apple-touch-icon" href="<?php echo cdn('/touchicon.png'); ?>"/>
+</head>
+
+<body>
+<?php echo $__env->yieldContent('main'); ?>
+<script type="text/javascript" src="<?php echo cdn('/assets/js/nej/baseline/src/define.js?pro=./'); ?>"></script>
+<?php echo $__env->yieldContent('scripts'); ?>
+</body>
+</html>

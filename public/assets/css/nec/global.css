@@ -1,0 +1,18 @@
+/*生成卡片*/
+.w-btn{padding:0 22px;height:31px;line-height:31px;color:#000;border:1px solid #b1b1b3;border-radius:2px;text-shadow:1px 1px #fff;/*background:-webkit-gradient(linear,0% 0%, 0% 100%, from(#fefefe), to(#f3f3f3));*/
+background:-o-linear-gradient(top,#fefefe,#f3f3f3);
+background:-moz-linear-gradient(top,#fefefe,#f3f3f3);
+background:-webkit-linear-gradient(top,#fefefe,#f3f3f3);
+box-shadow:inset 0 -1px #fff;}
+.w-btn:hover{
+background:-o-linear-gradient(left,#fff,#f5f5f5);
+background:-moz-linear-gradient(left,#fff,#f5f5f5);
+background:-webkit-linear-gradient(top,#fff,#f5f5f5);
+}
+.w-btn:active{
+background:#f8f8f8;
+box-shadow:inset 0 1px 1px #cccfd0;
+}
+.js-card{width:225px;border:1px solid #b1b1b3}
+.js-card .itm{line-height:34px;border-bottom:1px solid #e8e8e8;font-size:12px;padding-left:35px;width:190px}
+body .js-card .itm:hover{background-color:#f7f7f7}
