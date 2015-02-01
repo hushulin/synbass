@@ -5,16 +5,19 @@
   	"philo/laravel-blade": "2.*",
     "illuminate/view": "4.*",
     "rdlowrey/auryn": "~0.14",
-    "maximebf/debugbar": "~1.10"
+    "maximebf/debugbar": "~1.10",
+    "robmorgan/phinx": "0.4.*",
+    "gilbitron/php-simplecache": "~1.4"
   },
   "autoload": {
   		"classmap": [
 	      "app/controllers",
 	      "app/models",
-        "app/libs"
+        "app/libs",
+        "app/migrations"
 	    ],
-		"files":[
-        "app/libs/function/functions.php"
-		]
+  		"files":[
+          "app/libs/function/functions.php"
+  		]
 	}
 }

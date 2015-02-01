@@ -8,5 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'Philo\\Blade\\' => array($vendorDir . '/philo/laravel-blade/src'),
     'NoahBuscher\\Macaw\\' => array($vendorDir . '/codingbean/macaw'),
+    'Gilbitron\\Util\\' => array($vendorDir . '/gilbitron/php-simplecache/src'),
     'Auryn\\' => array($vendorDir . '/rdlowrey/auryn/lib'),
 );

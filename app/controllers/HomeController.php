@@ -13,7 +13,13 @@ class HomeController extends BaseController
 	public function index()
 	{
 		$user = new User();
-		$list = $user->find(1);
+		// $list = $user->find(1);
+		// echo User::find(1)->id;
+		// for ($i=0; $i < 1000; $i++) { 
+		// 	echo User::find(1)->id;
+		// }
+		Cache::set('eee','fsdfs');
+		echo Cache::get('eee');
 		return View::make('Index.index');
 	}
 }

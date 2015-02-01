@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'BaseController' => $baseDir . '/app/controllers/BaseController.php',
+    'Cache' => $baseDir . '/app/libs/engine/Cache.php',
     'Controller' => $baseDir . '/app/controllers/Controller.php',
     'HomeController' => $baseDir . '/app/controllers/HomeController.php',
     'Synbass\\View' => $baseDir . '/app/libs/view/View.php',

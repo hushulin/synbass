@@ -5,6 +5,12 @@ function synbass_app_path()
 	return $paths['app'];
 }
 
+function synbass_data_path()
+{
+	$paths  = require __DIR__.'/../../../bootstrap/paths.php';
+	return $paths['storage'].'/data';
+}
+
 function synbass_public_path()
 {
 	$paths  = require __DIR__.'/../../../bootstrap/paths.php';
