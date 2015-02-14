@@ -29,3 +29,14 @@ function cdn($paths)
 	$host = $config['url'] ?: 'localhost';
 	return $host.$paths;
 }
+
+function getPrintStrFunc() {  
+    $func = function( $str ) {  
+        echo $str;  
+    };  
+    return $func;  
+}
+
+function callFunc( $func ) {  
+    $func( 'some string' , 'ggg');  
+}  

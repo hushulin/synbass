@@ -18,8 +18,25 @@ class HomeController extends BaseController
 		// for ($i=0; $i < 1000; $i++) { 
 		// 	echo User::find(1)->id;
 		// }
-		Cache::set('eee','fsdfs');
-		echo Cache::get('eee');
-		return View::make('Index.index');
+		if ($list = Cache::get('eee')) {
+			
+		}else {
+			$list = User::get();
+			Cache::set(md5($list),$list);
+		}
+		$func = function($f){
+			echo $f;
+		};
+		// $func('fsdfs');
+		$getPrintStrFunc = getPrintStrFunc();
+		$printStrFunc = function( $str ) {  
+		    echo $str.'fsdfsd';  
+		};  
+		callFunc(function($s,$g){
+			echo $s."fffffffffff".$g;
+		});  
+
+		$getPrintStrFunc('sfsd333333');
+		return View::make('Index.index',compact('list'));
 	}
 }

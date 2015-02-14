@@ -7,7 +7,7 @@ Macaw::get('/fuck', function() {
 });
 
 Macaw::get('/eeee' , function(){
-	
+	echo $_GET['eee'];
 });
 
 Macaw::get('/', 'HomeController@index');
